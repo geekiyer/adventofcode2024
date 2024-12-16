@@ -3,11 +3,11 @@ import kotlin.math.roundToLong
 fun main() {
     val lines = readInput("Day13")
 
-    solve(1, input = lines)
-    solve(2, input = lines)
+    solvePart1(1, input = lines)
+    solvePart1(2, input = lines)
 }
 
-fun solve(part: Int, input: List<String>) {
+fun solvePart1(part: Int, input: List<String>) {
     var tokens = 0L
     val add = if (part == 2) 10000000000000 else 0L
     var x1 = 0L
